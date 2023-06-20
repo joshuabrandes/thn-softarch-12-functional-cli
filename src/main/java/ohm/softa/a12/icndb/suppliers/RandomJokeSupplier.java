@@ -6,6 +6,8 @@ import ohm.softa.a12.model.JokeDto;
 import ohm.softa.a12.model.ResponseWrapper;
 import org.apache.commons.lang3.NotImplementedException;
 
+import java.util.concurrent.ExecutionException;
+
 /**
  * @author Peter Kurfer
  */
@@ -20,8 +22,12 @@ public final class RandomJokeSupplier {
     }
 
     public ResponseWrapper<JokeDto> get() {
-        /* TODO fetch a random joke synchronously
+        /* fetch a random joke synchronously
          * if an exception occurs return null */
-        throw new NotImplementedException("Method `get()` is not implemented");
-    }
+		try {
+			return icndbApi.getRandomJoke().get();
+		} catch (InterruptedException | ExecutionException ex) {
+			return null;
+		}
+	}
 }
