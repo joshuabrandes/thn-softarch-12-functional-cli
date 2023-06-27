@@ -1,11 +1,8 @@
 package ohm.softa.a12.icndb;
 
+import ohm.softa.a12.cnjdb.JokeGenerator;
 import org.junit.jupiter.api.Test;
 
-/**
- * @author Peter Kurfer
- * Created on 12/28/17.
- */
 class JokesGeneratorTests {
 
     private JokeGenerator jokeGenerator = new JokeGenerator();

@@ -8,8 +8,8 @@ package java.util.function {
 
 package ohm.softa.a12.icndb {
     class JokeGenerator {
-        +randomJokesStream(): Stream<ResponseWrapper<JokeDto>>
-        +jokesStream(): Stream<ResponseWrapper<JokeDto>>
+        +randomJokesStream(): Stream<JokeDto>
+        +allJokesStream(): Stream<JokeDto>
     }
 
     package suppliers {

@@ -25,8 +25,8 @@ _Remark: the given test suite is incomplete but will succeed after the checkout.
 
 _Note 1:_ the class structure is already there (including the empty unit tests).
 
-_Note 2:_ the whole logic around the **ICNDB** is already implemented including the `ICNDBService` singleton!
-There is no way to implement asynchronous generators so you will have to use the `ICNDBService` also in a synchronous way.
+_Note 2:_ the whole logic around the **CNJDB** is already implemented including the `CNJDBService` service (which manages an API singleton)!
+There is no way to implement asynchronous generators so you will have to use the `CNJDBApi` also in a synchronous way.
 
 ## Generators
 
